@@ -764,7 +764,9 @@ a:focus {
 }
 
 .video-grid-item {
-  width: 200px;  /* Remove flex: 1, keep only fixed width */
+  flex: 1;
+  max-width: 280px;
+  min-width: 200px;
   text-align: center;
 }
 
@@ -785,12 +787,13 @@ a:focus {
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .video-grid-item {
-    width: 45%;
+    max-width: 45%;
+    min-width: 150px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .video-grid-item {
-    width: 100%;
+    max-width: 100%;
   }
 }
