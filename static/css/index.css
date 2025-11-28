@@ -786,3 +786,17 @@ a:focus {
     width: 100%;
   }
 }
+
+/* Sim Video Styling */
+.sim-video-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin: 1rem auto 1.5rem;
+}
+
+.sim-video-wrapper video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
