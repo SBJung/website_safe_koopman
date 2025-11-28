@@ -761,6 +761,9 @@ a:focus {
   gap: 1rem;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
+  max-width: 1200px;  /* Add this line */
+  margin-left: auto;   /* Add this line */
+  margin-right: auto;  /* Add this line */
 }
 
 .video-grid-item {
