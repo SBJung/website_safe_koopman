@@ -750,4 +750,50 @@ a:focus {
 }
 
 
+/* Video Grid Styling */
+.video-grid {
+  margin: 2rem 0;
+}
 
+.video-grid-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.video-grid-item {
+  flex: 1;
+  max-width: 280px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.video-grid-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .video-grid-item {
+    max-width: 45%;
+    min-width: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-grid-item {
+    max-width: 100%;
+  }
+}
