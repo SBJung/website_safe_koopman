@@ -753,49 +753,36 @@ a:focus {
 /* Video Grid Styling */
 .video-grid {
   margin: 2rem 0;
-}
-
-.video-grid-row {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
-  max-width: 1200px;  /* Add this line */
-  margin-left: auto;   /* Add this line */
-  margin-right: auto;  /* Add this line */
-}
-
-.video-grid-item {
-  flex: 0 0 200px;   /* fixed width for all tiles */
-  max-width: 200px;
   text-align: center;
 }
 
-.video-grid-item video {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.video-grid-row {
+  display: inline-flex;      /* shrink to fit children */
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: nowrap;
 }
 
-.video-caption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #4a4a4a;
-  line-height: 1.4;
+.video-grid-item {
+  width: 220px;              /* identical width */
+  flex: 0 0 auto;
+  text-align: center;
 }
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
+/* responsive fallback */
+@media screen and (max-width: 900px) {
+  .video-grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
   .video-grid-item {
-    max-width: 45%;
-    min-width: 150px;
+    width: calc(50% - 1rem);
+    max-width: none;
   }
 }
-
 @media screen and (max-width: 480px) {
   .video-grid-item {
-    max-width: 100%;
+    width: 100%;
   }
 }
