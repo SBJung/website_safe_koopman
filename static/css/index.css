@@ -120,7 +120,7 @@ body {
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
     line-height: 1.1 !important;
-    max-width: 1100px;     /* increase or remove to widen */
+    max-width: 2000px;     /* increase or remove to widen */
     margin-left: auto;
     margin-right: auto;
 }
