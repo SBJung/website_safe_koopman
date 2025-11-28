@@ -767,7 +767,8 @@ a:focus {
 }
 
 .video-grid-item {
-  width: 200px;
+  flex: 0 0 200px;   /* fixed width for all tiles */
+  max-width: 200px;
   text-align: center;
 }
 
