@@ -450,31 +450,35 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Extension to Floating-base Systems</h2>
-      <div class="columns is-centered is-vcentered">
-        <!-- Left column: single video -->
-        <div class="column is-half">
+      <!-- Top row: Dynamics Learning (larger) -->
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
           <div class="sim-video-wrapper">
             <video autoplay muted loop playsinline preload="metadata">
               <source src="static/videos/train_isaac_icra.mp4" type="video/mp4">
             </video>
           </div>
-          <p class="video-caption">CAPTION PLACEHOLDER 1</p>
+          <p class="video-caption">Dynamics Learning</p>
         </div>
+      </div>
 
-        <!-- Right column: two videos stacked vertically -->
+      <!-- Bottom row: Reference and KMPC side-by-side -->
+      <div class="columns is-centered">
         <div class="column is-half">
           <div class="sim-video-wrapper">
             <video autoplay muted loop playsinline preload="metadata">
               <source src="static/videos/icra_collide_go2.mp4" type="video/mp4">
             </video>
           </div>
-          <p class="video-caption">CAPTION PLACEHOLDER 2</p>
+          <p class="video-caption">Reference</p>
+        </div>
+        <div class="column is-half">
           <div class="sim-video-wrapper">
             <video autoplay muted loop playsinline preload="metadata">
               <source src="static/videos/icra_safe_go2.mp4" type="video/mp4">
             </video>
           </div>
-          <p class="video-caption">CAPTION PLACEHOLDER 3</p>
+          <p class="video-caption">KMPC</p>
         </div>
       </div>
     </div>
