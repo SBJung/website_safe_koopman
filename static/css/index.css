@@ -777,6 +777,15 @@ a:focus {
   flex: 0 0 auto;
   text-align: center;
 }
+
+.video-grid-item video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
 /* responsive fallback */
 @media screen and (max-width: 900px) {
   .video-grid-row {

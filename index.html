@@ -86,7 +86,7 @@
 
 
   <!-- ----------- TODO: Replace with your paper title and authors ----------- -->
-  <title>SAFE KOOPMAN</title>
+  <title>Safe Koopman</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
@@ -251,7 +251,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Whole-Body Safe Control of Robotic Manipulators with Koopman Neural Dynamics<sup>*</sup></h1>
+            <h1 class="title is-1 publication-title">Whole-Body Safe Control of Robotic Systems with Koopman Neural Dynamics</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
@@ -268,7 +268,7 @@
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
                     <span class="author-block"><sup>1</sup>Carnegie Mellon University</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Accepted to <em>2026 International Conference on Robotics and Automation (ICRA).</em></small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Published in <em>2026 International Conference on Robotics and Automation (ICRA)</em></small></span>
                     <!-- ------------- TODO: Replace to this one after acceptance -------------- -->
                     <!-- <span class="author-block">Carnegie Mellon University<br>ICRA, 2026</span> -->
                     <!-- TODO: Remove this line if no equal contribution -->
@@ -354,7 +354,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Controlling robots with strongly nonlinear, high-dimensional dynamics remains challenging, as direct nonlinear optimization with safety constraints is often intractable in real time. The Koopman operator offers a way to represent nonlinear systems as linear in a lifted space, enabling the use of efficient linear control. We propose a data-driven framework that learns a Koopman embedding and operator from data, and integrates the resulting linear model with the Safe Set Algorithm (SSA). This allows the tracking and safety constraints to be solved in a single quadratic program (QP), ensuring feasibility and optimality without a separate safety filter. We validate the method on a Kinova Gen3 manipulator in simulation, showing accurate tracking and obstacle avoidance, and discuss its potential for sim-to-real transfer with minimal retraining.
+            Controlling robots with strongly nonlinear, high-dimensional dynamics remains challenging, as direct nonlinear optimization with safety constraints is often intractable in real time. The Koopman operator offers a way to represent nonlinear systems linearly in a lifted space, enabling the use of efficient linear control. We propose a data-driven framework that learns a Koopman embedding and operator from data, and integrates the resulting linear model with the Safe Set Algorithm (SSA). This allows the tracking and safety constraints to be solved in a single quadratic program (QP), ensuring feasibility and optimality without a separate safety filter. We validate the method on a Kinova Gen3 manipulator and a Go2 quadruped, showing accurate tracking and obstacle avoidance.
           </p>
         </div>
       </div>
@@ -444,6 +444,43 @@
     </div>
   </div>
 </section>
+
+<!-- Extension to Floating-base Systems -->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Extension to Floating-base Systems</h2>
+      <div class="columns is-centered is-vcentered">
+        <!-- Left column: single video -->
+        <div class="column is-half">
+          <div class="sim-video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/train_isaac_icra.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="video-caption">CAPTION PLACEHOLDER 1</p>
+        </div>
+
+        <!-- Right column: two videos stacked vertically -->
+        <div class="column is-half">
+          <div class="sim-video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/icra_collide_go2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="video-caption">CAPTION PLACEHOLDER 2</p>
+          <div class="sim-video-wrapper">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/icra_safe_go2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="video-caption">CAPTION PLACEHOLDER 3</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Extension to Floating-base Systems -->
 
 <!-- Pipeline -->
 <section class="hero is-small">
@@ -570,8 +607,8 @@
 
 
 
-<!--BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
+<!-- BibTex citation -->
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -580,16 +617,20 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
+      <pre id="bibtex-code"><code>
+        @misc{jung2026wholebodysafecontrolrobotic,
+          title={Whole-Body Safe Control of Robotic Systems with Koopman Neural Dynamics}, 
+          author={Sebin Jung and Abulikemu Abuduweili and Jiaxing Li and Changliu Liu},
+          year={2026},
+          eprint={2603.03740},
+          archivePrefix={arXiv},
+          primaryClass={cs.RO},
+          url={https://arxiv.org/abs/2603.03740}, 
+    }
+      </code></pre>
     </div>
-</section> -->
-<!--End BibTex citation -->
+</section>
+<!-- End BibTex citation -->
 
 
   <footer class="footer">
