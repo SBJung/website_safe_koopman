@@ -817,3 +817,19 @@ a:focus {
   width: 100%;
   height: auto;
 }
+
+.video-caption {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Full-width "magnified" video that crops top/bottom a little so its
+   width matches a full row. Adjust --crop-ratio to taste:
+   larger number = wider/shorter = more vertical crop. */
+.sim-video-wrapper.is-wide video {
+  aspect-ratio: var(--crop-ratio, 16 / 8);
+  height: auto;
+  object-fit: cover;
+}
